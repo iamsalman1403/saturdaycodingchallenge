@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <header>
+                <div class="brand">
+                    <a href="#"><img id="lcologo" src="logo_lco_i3oab.png" alt=""></a>
+                </div>
+                <nav>
+                    <a href="" class="links hidden">About</a>
+                    <a href="" class="links hidden">Services</a>
+                    <a href="" class="links hidden">Contact</a>
+                    <span><i onclick="openMenu()" class="fas fa-bars visible"></i></span>
+                </nav>
+            </header>
+            <!--side nav-->
+            <div class="side-nav" id="side-menu">
+                <a href="#" onclick="closeMenu()" id="cls-btn">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                
+            </div>
+            <div class="header-text">
+                <h1>LCO <span class="lcoheadtext">We Organic</span></h1>
+                <hr>
+                <br>
+                <a href="">FIND OUT MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!--sec one-->
+    <div class="sec-one" id="first-section">
+        <div class="sec-one-text">
+            <h2>We've got what you need!.</h2>
+            <hr>
+            <p>Our organic juice is just what Nature ordered. It is pure, natural and free of pesticides & chemicals. We make this
+            happen in a careful and organized manner. First, we choose the area with the most suitable climate for the particular
+            fruit. Then, farmers who share similar values and have a certified organic farm</p>
+            <a href="">Visit Us</a>
+        </div>
+    </div>
+
+    <!--sec two-->
+    <div class="sec-two" id="second-sec">
+        <div class="sec-two-text">
+            <h2>At Your Service</h2>
+            <hr>
+        </div>
+        <div class="sec-two-boxes">
+            <div class="box">
+                <p id="icon1"><i class="fab fa-pagelines scroll"></i></p>
+                <h3>Pure & Organic</h3>
+                <p >Our juices are fresh as our fruits come straight from best farms.</p></div>
+                <div class="box">
+                    <p id="icon4"><i class="fas fa-heart scroll"></i></p>
+                    <h3>Made with Love</h3>
+                    <p>We mix our love to add extra taste to the juices.</p>
+                </div>
+            <div class="box">
+                <p id="icon2"><i class="fas fa-paper-plane scroll"></i></p>
+                <h3>At your doorstep</h3>
+                <p>Give us a ring and we deliver at your home.</p></div>
+        </div>
+    </div>
+
+    <!--sec three-->
+    <div class="sec-three gallery" id="third-sec">
+        <div class="sec-three-boxes">
+            <div class="box">
+                <img src="lcopic4.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="lcopic5.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="lcopic1.jpeg" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--sec four-->
+    <div class="sec-four" id="forth-sec">
+        <div class="sec-four-text">
+            <p>Get our app in your Android and Ios device.</p>
+            <a href="">DOWNLOAD APP</a>
+        </div>
+    </div>
+
+    <!--sec five-->
+    <div class="sec-five" id="fifth-sec">
+        <div class="sec-five-text">
+            <p id="big">Let's Get In Touch!</p>
+            <hr>
+            <p>Ready to try our organic and fresh juices?</p>
+        </div>
+        <div class="sec-five-boxes">
+            <div class="box">
+                <p><i class="fas fa-phone"></i></p>
+                <p>123-456-789</p>
+            </div>
+            <div class="box">
+                <p><i class="fas fa-envelope"></i></p>
+                <p id="red-para">paigaam@lcojuice.com</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openMenu(){
+            document.getElementById('side-menu').style.width = '250px';
+        }
+        function closeMenu(){
+            document.getElementById('side-menu').style.width = '0px';
+        }
+
+        ScrollReveal().reveal('.scroll', { delay: 500, easing: 'cubic-bezier(0.1, 0.2, 0.5, 0.1)' });
+        
+
+        
+    </script>
+</body>
+</html>
